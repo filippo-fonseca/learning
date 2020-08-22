@@ -1,0 +1,13 @@
+<h1>Show Topic2</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @topic2.title %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.topic2_path(@conn, :edit, @topic2) %></span>
+<span><%= link "Back", to: Routes.topic2_path(@conn, :index) %></span>

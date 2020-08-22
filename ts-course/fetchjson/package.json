@@ -1,0 +1,16 @@
+{
+  "name": "fetchjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Filippo Fonseca <filifonsecacagnazzo@gmail.com> (https://www.zyndicate.app/)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.19.2",
+    "mathiumjs": "1.0.3"
+  }
+}
