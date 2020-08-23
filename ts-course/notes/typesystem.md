@@ -68,6 +68,43 @@ interface Todo {
 
 - Refer to `types.ts` in the `features` folder
 
+Whenever you create an object and don't specify a type with an intefrace, **the type will default to be the whole object.**
+
+_Here are some examples of types in action:_
+
+**Example 1:**
+
+```ts
+const today = new Date();
+today.getDate();
+```
+
+In this scenerio, the variable `today` has a type of `Date()`. This means that it has access to all of the properties and methods that `Date()` has. You can see this when dot notation is used to `getDate()`.
+
+**Example 2:**
+
+```ts
+const person = {
+  age: 20,
+};
+
+person.age;
+```
+
+In this scenerio, the variable `person` has a type of `object`. This means that it has access to all of the properties and methods that the object has `(like age)`. You can see this when dot notation is used (`person.age;`).
+
+**Example 3:**
+
+```ts
+class Color {}
+
+const red = new Color();
+```
+
+In this scenerio, the variable `red` has a type of `Color()`. This means that it has access to all of the properties and methods that `Color()`.
+
+---
+
 ## 13. Where Do We Use Types?
 
 - EVERYWHERE!
