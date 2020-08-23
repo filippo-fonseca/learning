@@ -119,7 +119,7 @@ console.log(coordinates); // {x: 10, y: 20};
 
 - Here, we are defining a variable with `const` called `json` that contains a string
 - The `coordinates` variable takes the string and parses it with `JSON.parse()`
-- Then, we log `coordinates`` to the console with the final line of code
+- Then, we log `coordinates` to the console with the final line of code
 
 **'Any' Type**: TypeScript has no clue what this is - can't check for correct property references
 
