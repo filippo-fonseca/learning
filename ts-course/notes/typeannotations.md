@@ -29,7 +29,7 @@ let now: Date = new Date();
 
 **CODE DECONSTRUCTION:** Here, we are defining a variable called `now` and we are telling TS that the variable is going to be of type `Date`. On the other side, we assign it an instance of a `Date` object.
 
-## 16. Object Literal annotations
+## 16. Object Literal Annotations
 
 - Refer to features/annotations/variables.ts
 
@@ -124,3 +124,74 @@ console.log(coordinates); // {x: 10, y: 20};
 **'Any' Type**: TypeScript has no clue what this is - can't check for correct property references
 
 - **AVOID VARIABLES WITH 'ANY' AT ALL COSTS**
+- TS cannot help us catch errors
+
+## 20. Fixing the 'Any' Type
+
+- Refer to features/annotations/variables.ts
+
+- Add in type annotations to the `coordinates` declaration, as such:
+
+```ts
+const json = '{"x": 10, "y": 20}';
+const coordinates: { x: number; y: number } = JSON.parse(json);
+console.log(coordinates); // {x: 10, y: 20};
+```
+
+**CODE DECONSTRUCTION:**
+
+- We added the code snippet `{ x: number; y: number }` to specify to TS the what type each parameter is going to have
+
+## 21. Delayed Initialization
+
+When we are declaring a value on one line and then calling it on another, this is known as `Delayed Initialization`. We can prevent the value from being of type 'Any' by using Type Annotation:
+
+```ts
+// 2) When we declare a variable on one line
+// and initialize it later
+let words = ["red", "green", "blue"];
+let foundWord: boolean;
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "green") {
+    foundWord = true;
+  }
+}
+```
+
+## 22. When Inference Doesn't Work
+
+- Refer to features/annotations/variables.ts
+
+In the following snippet:
+
+```ts
+// 3) Variable whose type cannot be inferred correctly
+let numbers = [-10, -1, -12];
+let numberAboveZero = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
+```
+
+**CODE DECONSTRUCTION**:
+
+- We are defining two variables with `let`: `numbers` and `numberAboveZero`.
+- Below, we are creating a for loop that checks if there is a number greater than 0 in the `numbers` array.
+  The `if` statement inside of the for loop will return an error, as we are assigning `numberAboveZero` (currently just a boolean) to a number.
+- We can fix this using type annotations and making the type of `numberAboveZero` both a `boolean` and a `number`, as such:
+
+```ts
+// 3) Variable whose type cannot be inferred correctly
+let numbers = [-10, -1, -12];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
+```
