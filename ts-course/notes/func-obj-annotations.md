@@ -19,4 +19,4 @@ const add = (a: number, b: number): number => {
 - We are declaring a variable using `const` called `add`
 - We are giving the variable two parameters: `a` and `b`
 - We are assigning the type `number` to both `a` and `b`
-- With `: number`, we are telling TS that the return value of the function will
+- With `: number`, we are telling TS that the return value of the function will be a number
