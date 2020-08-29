@@ -53,3 +53,20 @@ carMakers.map((car: string): string => {
 When returning `car`, TypeScript gives us a large variety of autocomplete functionality because it knows that the return value will be a string.
 
 4. Flexible - arrays can still contain multiple different types
+
+- Check the next section
+
+## Multiple Types in Arrays
+
+By using the `|`, which acts as the `or` operator, we can assign multiple types to an array, as such:
+
+```ts
+// Flexible types
+const importantDates: (Date | string)[] = [new Date()];
+importantDates.push("2030-10-10");
+importantDates.push(new Date());
+```
+
+## 32. When To Use Typed Arrays
+
+- Anytime we need to represent a collection of records with some arbitrary sort of order
