@@ -6,4 +6,4 @@ Feel free to take it and use it to help you understand the wonderful world of pr
 
 Built and maintained with ❤️ by [@filippofonseca](https://www.twitter.com/filippofonseca)
 
-[filippofonseca.com(https://filippofonseca.com)
+[filippofonseca.com](https://filippofonseca.com)
