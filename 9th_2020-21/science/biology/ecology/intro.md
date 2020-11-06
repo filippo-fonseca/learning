@@ -10,7 +10,7 @@
 
 **Biotic factors:** All the living organisms inhabiting the Earth.
 
-**Organism:** An unicellular or multicellular form of exhibiting all of the characteristics of life, an individual. For example, whit tail dear.
+**Organism:** A unicellular or multicellular form of exhibiting all of the characteristics of life, an individual. For example, whit tail dear.
 
 **Population:** A group of one species living in the same place at the same time that interbreed.
 
