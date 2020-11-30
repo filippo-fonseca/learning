@@ -1,4 +1,4 @@
-# Filippo Fonseca's Learninig Material
+# Filippo Fonseca's Learning Material
 
 This is all of the learning material, projects, notes, and docs that have aided me in becoming an Entrepreneur, Full-Stack Engineer, Data Scientist, Designer, Podcaster, and more. They continue to help me to this day, as I still commit changes to it pretty much on the daily; always learning and growing! 💪
 
