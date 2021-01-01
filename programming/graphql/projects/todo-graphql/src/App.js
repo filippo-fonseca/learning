@@ -112,7 +112,7 @@ function App() {
      
       <div className="vh-100 code flex flex-column items-center bg-purple white pa3 fl-1">  
             <h1 className="f2-l">GraphQL Checklist 
-              <span role="img" aria-label="Checkmark">✅</span>
+              <span role="img" aria-label="Checkmark"> ✅</span>
             </h1>
             {/* Todo Form  */}
             <form onSubmit={handleAddTodo} className="mb3">
